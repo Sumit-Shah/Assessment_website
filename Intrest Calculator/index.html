@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="maindiv"> <!-- Adding the  class attribute as per question "maindiv" -->
+        <h1>Simple Interest Calculator</h1>
+
+        Amount <input type="number" id="principal">  <br/>
+        Rate <input type="range" id="rate" min="1" max="20" value="10.25" step="0.25">   
+        <!-- Modifying the  type to "range" as per the question . -->
+         <!-- Adding the  attributes min, max, value, and step  as per question-->
+        <span id="rate_val">10.25</span>%<br> 
+        <!-- Adding span element with id "rate_val" as per the question -->
+        <!-- Adding default value inside the span tag and placed "%" outside as per the question -->
+        <!-- Inserting line break after the span tag as per the question -->
+        No. of Years 
+        <select id="years">  <!-- Replaced the input element with select element -->
+            <option value="1">1</option> <!-- Added option elements from 1 to 10 -->
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <br>
+        Interest: <span id="result"></span><br>
+
+        <button onclick="compute()">Compute Interest</button>  
+        <!-- Changing the button name to "Compute Interest" As per the question. -->
+        <br>
+        <span id="result"></span>
+        <!-- Adding the  empty span element with id "result"  As per the question.-->
+    </div>
+    </div>
+
+    <footer>
+        &copy; SUMIT SHAH <!-- Added copyright message which belongs to me. -->
+    </footer>
+    <script>
+         function logConsole(){
+        console.log("To do");
+        var Arr1 = [type="range" id="rate" min="1" max="20" value="10.25" step="0.25"];
+        console.log(Arr1);
+     }
+    </script>
+   
+</body>
+</html>
